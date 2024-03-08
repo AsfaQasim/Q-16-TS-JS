@@ -1,0 +1,11 @@
+var guestslist = ["Sundas", "Faria", "Nazish"];
+var canNotAttend = "Faria";
+var newGuest = "Zeeshan";
+guestslist[guestslist.indexOf(canNotAttend)] = newGuest;
+var guestBeg = "Faizan";
+guestslist.unshift(guestBeg);
+var midGuest = "Mohsin";
+var midIndex = guestslist.length / 3;
+guestslist.splice(midIndex, 0, midGuest);
+guestslist.push("Talha");
+guestslist.map(function (items) { return console.log("Dear ".concat(items, ", You Are Invited In The More Guest List In My House For Dinner")); });
